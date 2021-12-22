@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ProductController {
-    @GetMapping("unit-prize/{product}")
+    @GetMapping("unit-price/products/{product}")
     public Double getPrize(@PathVariable String product) {
         return 2.0;
     }

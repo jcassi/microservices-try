@@ -7,21 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="total-price" />
-        <module name="unit_price" />
+        <module name="unit-price" />
         <module name="microservices_try" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="microservices_try" target="11" />
       <module name="total-price" target="11" />
-      <module name="unit_price" target="11" />
+      <module name="unit-price" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="microservices_try" options="-parameters" />
       <module name="total-price" options="-parameters" />
-      <module name="unit_price" options="-parameters" />
+      <module name="unit-price" options="-parameters" />
     </option>
   </component>
 </project>
