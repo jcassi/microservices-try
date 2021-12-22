@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/microservices_try.iml" filepath="$PROJECT_DIR$/microservices_try.iml" />
-      <module fileurl="file://$PROJECT_DIR$/unit_prize/unit_prize.iml" filepath="$PROJECT_DIR$/unit_prize/unit_prize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/total-price/total-price.iml" filepath="$PROJECT_DIR$/total-price/total-price.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unit_price/unit_price.iml" filepath="$PROJECT_DIR$/unit_price/unit_price.iml" />
     </modules>
   </component>
 </project>
