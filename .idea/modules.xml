@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/microservices_try.iml" filepath="$PROJECT_DIR$/microservices_try.iml" />
+      <module fileurl="file://$PROJECT_DIR$/naming-server/naming-server.iml" filepath="$PROJECT_DIR$/naming-server/naming-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/total-price/total-price.iml" filepath="$PROJECT_DIR$/total-price/total-price.iml" />
       <module fileurl="file://$PROJECT_DIR$/unit-price/unit-price.iml" filepath="$PROJECT_DIR$/unit-price/unit-price.iml" />
     </modules>
