@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="total-price" />
         <module name="unit-price" />
+        <module name="api_gateway" />
         <module name="microservices_try" />
         <module name="naming-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api_gateway" target="11" />
       <module name="microservices_try" target="11" />
       <module name="naming-server" target="11" />
       <module name="total-price" target="11" />
@@ -21,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api_gateway" options="-parameters" />
       <module name="microservices_try" options="-parameters" />
       <module name="naming-server" options="-parameters" />
       <module name="total-price" options="-parameters" />

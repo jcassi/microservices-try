@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: unit-price
+          uri: http://localhost:8000
+          predicates:
+            - Path=/unit-price/**
+        - id: total-price
+          uri: http://localhost:8100
+          predicates:
+            - Path=/total-price/**

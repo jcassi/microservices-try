@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/total-price/pom.xml" />
         <option value="$PROJECT_DIR$/unit-price/pom.xml" />
         <option value="$PROJECT_DIR$/naming-server/pom.xml" />
+        <option value="$PROJECT_DIR$/api_gateway/pom.xml" />
       </list>
     </option>
   </component>
