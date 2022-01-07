@@ -1,0 +1,50 @@
+version: '3.7'
+
+services:
+  unit-price:
+    image: juli-unit-price:0.0.1-SNAPSHOT
+    ports:
+      - "8000:8000"
+    networks:
+      - microservices-try-network
+    depends_on:
+      - naming-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+
+  total-price:
+    image: juli-total-price:0.0.1-SNAPSHOT
+    ports:
+      - "8100:8100"
+    networks:
+      - microservices-try-network
+    depends_on:
+      - naming-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+
+  api-gateway:
+    image: juli-api_gateway:0.0.1-SNAPSHOT
+    ports:
+      - "8765:8765"
+    networks:
+      - microservices-try-network
+    depends_on:
+      - naming-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+      SPRING.CLOUD.GATEWAY.ROUTES[0].URI: http://unit-price:8000
+      SPRING.CLOUD.GATEWAY.ROUTES[0].PREDICATES[0]: Path=/unit-price/**
+      SPRING.CLOUD.GATEWAY.ROUTES[1].URI: http://total-price:8100
+      SPRING.CLOUD.GATEWAY.ROUTES[1].PREDICATES[0]: Path=/total-price/**
+
+  naming-server:
+    image: juli-naming-server:0.0.1-SNAPSHOT
+    ports:
+      - "8761:8761"
+    networks:
+      - microservices-try-network
+
+
+networks:
+  microservices-try-network:
